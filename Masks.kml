@@ -1,0 +1,310 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<kml xmlns="http://www.opengis.net/kml/2.2" xmlns:gx="http://www.google.com/kml/ext/2.2" xmlns:kml="http://www.opengis.net/kml/2.2" xmlns:atom="http://www.w3.org/2005/Atom">
+<Document>
+	<name>Masks.kml</name>
+	<Style id="s_ylw-pushpin">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<StyleMap id="m_ylw-pushpin">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl0</styleUrl>
+		</Pair>
+	</StyleMap>
+	<StyleMap id="m_ylw-pushpin0">
+		<Pair>
+			<key>normal</key>
+			<styleUrl>#s_ylw-pushpin0</styleUrl>
+		</Pair>
+		<Pair>
+			<key>highlight</key>
+			<styleUrl>#s_ylw-pushpin_hl</styleUrl>
+		</Pair>
+	</StyleMap>
+	<Style id="s_ylw-pushpin_hl">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin_hl0">
+		<IconStyle>
+			<scale>1.3</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Style id="s_ylw-pushpin0">
+		<IconStyle>
+			<scale>1.1</scale>
+			<Icon>
+				<href>http://maps.google.com/mapfiles/kml/pushpin/ylw-pushpin.png</href>
+			</Icon>
+			<hotSpot x="20" y="2" xunits="pixels" yunits="pixels"/>
+		</IconStyle>
+	</Style>
+	<Folder>
+		<name>Masks</name>
+		<open>1</open>
+		<Folder>
+			<name>woodlot</name>
+			<Placemark>
+				<name>woodlot_1</name>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-80.06364163215548,35.8126125315833,0 -80.05301583809312,35.80874761303565,0 -80.0498092547618,35.82090179284794,0 -80.05396628836415,35.83388807663054,0 -80.06831712559139,35.83429187873657,0 -80.06364163215548,35.8126125315833,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Duke forest</name>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.96971660595814,36.00493711215857,0 -78.96667188291721,36.00268043629313,0 -78.9583922239232,36.0064760929366,0 -78.96154996858078,36.00955605852069,0 -78.96971660595814,36.00493711215857,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>agriculture</name>
+			<Placemark>
+				<name>Ag1\</name>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-80.39079359058046,35.44176086678699,0 -80.37485617975199,35.47050385032406,0 -80.38591158623458,35.4758893908168,0 -80.40152918695334,35.44580770252885,0 -80.39079359058046,35.44176086678699,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Ag2</name>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-80.02704612614198,35.56878164888531,0 -80.01169234957857,35.57027625515779,0 -80.00679046772494,35.57561235274477,0 -79.98776876273898,35.57580667925733,0 -79.98736876795211,35.58807105572667,0 -80.0031709822356,35.59302254289867,0 -80.02798647242383,35.59812306487807,0 -80.02704612614198,35.56878164888531,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>ag3</name>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.81175984069289,36.16866086075302,0 -78.79476008625757,36.16604324457199,0 -78.79571557890603,36.17583236711798,0 -78.80918287336056,36.17807304638634,0 -78.81175984069289,36.16866086075302,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>heavy_urban</name>
+			<Placemark>
+				<name>Durham</name>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.91669715679457,36.00211065095954,0 -78.91126087633567,35.99827542553645,0 -78.90814094819063,35.99287886406729,0 -78.8981776631084,35.9888906310672,0 -78.89477127798132,35.9932522974614,0 -78.8966571960144,35.99832609907764,0 -78.89912967240851,36.00222350232093,0 -78.89918850889197,36.00431305466834,0 -78.90214041928458,36.00526434969614,0 -78.91669715679457,36.00211065095954,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Raleigh</name>
+				<visibility>0</visibility>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.64875442669884,35.77895540498113,0 -78.64289625440826,35.77221679277726,0 -78.63816564528769,35.77195266053355,0 -78.63268687535039,35.77534906016531,0 -78.63443667888787,35.78097852907006,0 -78.6371030981549,35.78768981819685,0 -78.63932409175882,35.79290152293314,0 -78.64351914880987,35.79335852175703,0 -78.64598810100124,35.78823305199605,0 -78.65040908872326,35.78868198565578,0 -78.64875442669884,35.77895540498113,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Charlotte</name>
+				<visibility>0</visibility>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-80.86895749831942,35.22395670893128,0 -80.83505502285173,35.2111722580927,0 -80.81819646042042,35.22516733598923,0 -80.82969347422018,35.23182435050761,0 -80.80696817895736,35.24681910565266,0 -80.83445127308909,35.24886293702116,0 -80.86895749831942,35.22395670893128,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Atlanta</name>
+				<visibility>0</visibility>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-84.41914924289448,33.73866680307771,0 -84.41248427593716,33.7324702106674,0 -84.39959430793935,33.73509447644285,0 -84.39976924434745,33.74222148264444,0 -84.38728703611136,33.74307890595208,0 -84.37422223097283,33.7492811167878,0 -84.36287898992026,33.75435682532319,0 -84.37017843086775,33.76160180023899,0 -84.38239587321934,33.76343397964775,0 -84.38092301167713,33.78224710055412,0 -84.39033585009477,33.79791871884503,0 -84.40710025610441,33.79355894136062,0 -84.41456292850125,33.79661439219956,0 -84.42227395892986,33.80236461703931,0 -84.43093584330661,33.81341785992959,0 -84.43710286056597,33.81154522874208,0 -84.43824553172246,33.80199082031199,0 -84.45171686838218,33.80444527913214,0 -84.45703951768908,33.79954147327991,0 -84.41914924289448,33.73866680307771,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Greenville</name>
+				<visibility>0</visibility>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-82.40602902377711,34.84088278188466,0 -82.40138857683951,34.84538761478974,0 -82.3964036383932,34.8448211959439,0 -82.39035183307429,34.84851513838829,0 -82.39086111235574,34.8542728945019,0 -82.39797983228199,34.85436998615106,0 -82.39600965375851,34.8576821457557,0 -82.40257867467591,34.85762133144762,0 -82.40624678824493,34.85442315119915,0 -82.41128777715699,34.84797276659856,0 -82.40602902377711,34.84088278188466,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>light_urban</name>
+			<open>1</open>
+			<Placemark>
+				<name>Spring Valley</name>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-79.84580406277094,36.02097317323678,0 -79.82692744127766,36.02169044501721,0 -79.82208579854054,36.0344084972065,0 -79.82413359726397,36.03744122276255,0 -79.83009384452423,36.03883239537139,0 -79.83362650986042,36.03763069035224,0 -79.84034525499344,36.03616545192432,0 -79.84856000382661,36.03255385099386,0 -79.84580406277094,36.02097317323678,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Greensboro_suburb1</name>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-79.84600037681005,36.07614823980337,0 -79.83217156583119,36.07503637159805,0 -79.8306206307555,36.08218735524865,0 -79.84510571456183,36.08681970261313,0 -79.84600037681005,36.07614823980337,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Atlanta_suburb1</name>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-84.31989184292777,33.72599886546684,0 -84.28574287659799,33.71339538298069,0 -84.27801818867994,33.72563555157051,0 -84.28788657992321,33.73794413207602,0 -84.31010860176598,33.73887854833728,0 -84.31989184292777,33.72599886546684,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>Atlanta_suburb2</name>
+				<styleUrl>#m_ylw-pushpin0</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-84.13173725006823,33.74653557751612,0 -84.12337964351103,33.75811603907707,0 -84.10840739321857,33.76187726252559,0 -84.11985839178651,33.77132217646385,0 -84.13043730786248,33.77986079808586,0 -84.13850289100516,33.76792686128822,0 -84.14598904386408,33.76216327456277,0 -84.13173725006823,33.74653557751612,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+			<Placemark>
+				<name>durham_suburb</name>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.98986159757973,35.97846745607489,0 -78.9840067575856,35.97799435414957,0 -78.98251520967207,35.98282279753155,0 -78.98992307780654,35.98313563124834,0 -78.98986159757973,35.97846745607489,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+		<Folder>
+			<name>water</name>
+			<Placemark>
+				<name>Kerr Lake</name>
+				<styleUrl>#m_ylw-pushpin</styleUrl>
+				<Polygon>
+					<tessellate>1</tessellate>
+					<outerBoundaryIs>
+						<LinearRing>
+							<coordinates>
+								-78.36923035576703,36.5653838398482,0 -78.33906567012137,36.56032542726181,0 -78.33658250122238,36.5450302788694,0 -78.3420165531961,36.53188094210895,0 -78.33266869406732,36.52737810238702,0 -78.31333715230559,36.54828451072062,0 -78.30538364763085,36.56894197779339,0 -78.28731848987633,36.56536043016841,0 -78.28456388204233,36.58321139887027,0 -78.33802095836349,36.58502333082672,0 -78.36651185148905,36.58480629413547,0 -78.36648153408441,36.58494413419568,0 -78.38179320684971,36.59648950319223,0 -78.40144380944403,36.59097846358024,0 -78.42365196261865,36.58265634359166,0 -78.41985285309661,36.57897014766723,0 -78.36923035576703,36.5653838398482,0 
+							</coordinates>
+						</LinearRing>
+					</outerBoundaryIs>
+				</Polygon>
+			</Placemark>
+		</Folder>
+	</Folder>
+</Document>
+</kml>
