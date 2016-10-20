@@ -21,7 +21,7 @@ function res = land_class(cwd,scene_dir,fname_base,out_dir,landsat,class_land)
 	
 	% remove the scale factor
 	b = b / 10000;
-
+	
 	fprintf('total water pixels: %d\n', sum(wr_pixels(:) == 1))
 	fprintf('total cloud pixels: %d\n', sum(wr_pixels(:) == 4))
 
@@ -36,25 +36,36 @@ function res = land_class(cwd,scene_dir,fname_base,out_dir,landsat,class_land)
 
 	mean_sigs = mean_sigs(1:5,:);
 	if class_land
-		if cheb
-			distances = calc_distances(b, cat_masks, mean_sigs,false);
-		else
-			distances = calc_distances(b, cat_masks, mean_sigs,true);
-		end
-
-		index = find_mins(distances);
-
-		% set all the water pixels to the class water
-		index(wr_pixels == 1) = 5;
-		index(wr_pixels == 4) = 6;
-		im = create_rgb(index, b);
-
-		%dlmwrite(index, strcat(out_dir,'indices.txt'))
-		imwrite(im, strcat(out_dir,'classification.tif'));
+		do_classify(b, cat_masks, wr_pixels, mean_sigs, out_dir, 'classification');
+		%do_classify(ndvi, cat_masks, wr_pixels, ndvi_sigs, out_dir, 'ndvi_classify');
 	end
 
 	clear all; close all;
 	res = 1;
+end
+
+function im = do_classify(bands, cat_masks, cf_mask, mean_sigs, out_dir, im_name)
+	distances = calc_distances(bands, cat_masks, mean_sigs,true);
+	index = find_mins(distances);
+
+	% set all the water pixels to the class water
+	index(cf_mask == 1) = 5;
+	index(cf_mask == 4) = 6;
+	index(cf_mask == 2) = 6;
+	im = create_rgb(index, bands);
+
+	dlmwrite(strcat(out_dir,im_name,'txt'),index);
+	imwrite(im,strcat(out_dir,im_name,'.tif'));
+end
+
+function [] = plot_ndvi(cat_names, ndvi_sigs, std_devs, filename)
+	figure
+	errorbar(ndvi_sigs, std_devs)
+	xlabel('Land category')
+	ylabel('NDVI')
+	box on
+	set(gca, 'XTick', 1:6, 'XTickLabel', cat_names)
+	print(filename, '-dpng')
 end
 
 function [] = plot_mean_sigs(cat_names, cat_colors, mean_sigs,std_devs,filename)
